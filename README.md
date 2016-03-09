@@ -1,6 +1,16 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# React Tutorial
+# React Tutorial with added New Relic
+
+## New Relic specific stuff:
+
+* `npm install newrelic --save`
+* `cp node_modules/newrelic/newrelic.js .`
+* Edit newrelic.js to set app name and to pull license key from environment: `process.env.NEW_RELIC_LICENSE_KEY`
+* Edit the server.js to add `require newrelic` at the top
+* Set the license key and run: `NEW_RELIC_LICENSE_KEY=YOUR_LICENSE_KEY_HERE node server.js`
+
+
 
 This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
 
